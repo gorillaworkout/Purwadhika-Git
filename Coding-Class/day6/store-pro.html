@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store-Advance</title>
+</head>
+<body>
+    
+
+  <script src="store-pro.js"></script>  
+</body>
+</html>
+
+
+for(i=0; i<=namaBuah.length; i++){
+  // var testing = namaBuah
+  if(kurangNamaBuah == namaBuah[i]){
+      // console.log(namaBuah[i])
+      namaBuah.splice(i,1)
+      // console.log(namaBuah)
+  }
+
+  else{
+      // console.log(namaBuah[i])
+      console.log('error')
+
+  }
+  if (kurangBuah<=stockBuah[i]){
+      // console.log(namaBuah[i])
+      stockBuah[i] -= kurangBuah
+
+  //   console.log(stockBuah)
+  //   break;
+    }else if (kurangBuah >= stockBuah){
+      stockBuah.splice(i,1)
+              //    console.log(stockBuah)
+    }else{
+      stockBuah[i] = 0;
+              //    console.log(stockBuah[i])
+    }
+    break;
+}
